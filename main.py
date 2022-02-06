@@ -9,6 +9,8 @@ class Game:
         pygame.display.set_caption('Auto Battler')
         self.clock = pygame.time.Clock()
 
+    #Main game loop. Scene manager keeps track of current state and handles changing between states. State determines what functions are run per frame.
+    #state_manager.current_state.update() for example
     def run(self):
         while True:
             for event in pygame.event.get():
